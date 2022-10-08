@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1280px;
+    text-align: center;
+}
+section#projetos{
+    background-color: rgb(20, 38, 78);
+}
+section#projetos .container > h2{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+}
+.projeto-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projeto-single{
+    
+    background-color: white;
+    width: 30%;
+    border: 1px solid #ccc;
+    margin: 3em 1em;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: transform ease;
+    overflow:hidden;
+}
+section#projetos .projeto-single h2{
+    color: black;
+    margin: 1em auto;
+    text-align: center;
+}
+.projeto-single img{
+    width: 100%;
+}
+.projeto-single:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .5s;
+}
+.projeto-single a{
+    text-decoration: none;
+    color: white;
+}
+.button-projeto{
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #030304, #131634, #202060, #38268d, #5d25b9);    color: white;
+    display: inline-block;
+    width: 80%;
+    border-radius: 2em;
+    padding: 6px;
+    margin: 1em;
+}
+.button-projeto:hover{
+    background-image: linear-gradient(to right top, #27277e, #1824a3, #2626aa, #3c23bb, #6111e2);    color: white;
+
+}
